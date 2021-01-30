@@ -45,8 +45,8 @@ class User extends Authenticatable
     ];
 
 
-    public function phone()
+    public function worlds()
     {
-        return $this->hasOne(World::class);
+        return $this->hasMany(World::class);
     }
 }
